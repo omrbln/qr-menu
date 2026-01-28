@@ -1,14 +1,144 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QR Menü</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Şan Lokantası | Menü</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #f5f5f5;
+}
+
+header {
+  text-align: center;
+  padding: 25px 15px;
+  background: linear-gradient(135deg, #2a2a2a, #000);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.section {
+  padding: 20px 15px;
+}
+
+.section h2 {
+  border-bottom: 2px solid #c9a24d;
+  padding-bottom: 6px;
+  color: #c9a24d;
+}
+
+.menu-item {
+  display: flex;
+  gap: 12px;
+  margin: 15px 0;
+  background: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.menu-info {
+  flex: 1;
+  padding: 10px;
+}
+
+.menu-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.price {
+  font-weight: bold;
+  color: #c9a24d;
+  margin-top: 6px;
+}
+
+.simple-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  padding: 20px;
+}
+</style>
 </head>
+
 <body>
 
-<h1>🍽️ Lokanta Menüsü</h1>
-<p>Menü yakında güncellenecek.</p>
+<header>
+  <h1>ŞAN LOKANTASI</h1>
+  <p>Geleneksel Lezzetler • Ev Tadında Yemekler</p>
+</header>
+
+<div class="section">
+  <h2>🍽️ Yiyecekler</h2>
+
+  <div class="menu-item">
+    <img src="https://images.unsplash.com/photo-1604908177522-050c94d3e1c6" alt="">
+    <div class="menu-info">
+      <h3>Tavuk Çorba</h3>
+      <div class="price">75 TL</div>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://images.unsplash.com/photo-1605478038464-bc82e38f7e3b" alt="">
+    <div class="menu-info">
+      <h3>Mercimek Çorba</h3>
+      <div class="price">75 TL</div>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://images.unsplash.com/photo-1625944525975-5d69c38d9c9d" alt="">
+    <div class="menu-info">
+      <h3>Adana Kebap</h3>
+      <div class="price">300 TL</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🥤 İçecekler</h2>
+
+  <div class="simple-list">
+    <span>Ayran</span><span>25 TL</span>
+  </div>
+  <div class="simple-list">
+    <span>Kola</span><span>50 TL</span>
+  </div>
+  <div class="simple-list">
+    <span>Su</span><span>10 TL</span>
+  </div>
+</div>
+
+<footer>
+  Fiyatlarımız KDV Dahildir • Servis Ücreti Alınmaz
+</footer>
 
 </body>
 </html>
